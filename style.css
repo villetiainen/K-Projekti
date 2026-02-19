@@ -1,67 +1,98 @@
-body {margin: 0;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background: #eee;}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #eee;
+}
 
-ul {list-style: none;
-    margin: 0;padding: 0;background-color: #333;display: flex;
-    justify-content: center;align-items: center;flex-wrap: wrap;}
-    @media (max-width: 600px) { li a {padding: 10px 12px; font-size: 14px;}}
+/* NAVI */
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
 
-.nav { display:flex; align-items: center;}
-.logo a {font-size: 20px; font-weight: bold;}    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-li {display: inline-block;}/* Linkit vierekkäin */
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: block;
+}
 
-li a {color: white;
-      text-decoration: none;
-      padding: 14px 20px;
-      display: block;}/* Linkkien ulkoasu */
+.nav a:hover { background-color: #111; }
+.nav a.active { background-color: #026b43; }
 
-li a:hover {background-color: #111;}/* Hover efekti */
+.logo a { font-size: 20px; font-weight: bold; }
 
-.active {background-color: #04AA6D;}/* Aktiivinen sivu */ 
+@media (max-width: 600px) {
+  .nav a { padding: 10px 12px; font-size: 14px; }
+}
 
-.header {position: relative;}/* HERO / HEADER */
+/* HERO / HEADER */
+.header { position: relative; }
 
-.header img {width: 100%;
+.header img {
+  width: 100%;
   max-width: 800px;
   margin: 0 auto;
-             height: 320px;
-             object-fit: cover;
-             display: block;}
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
 
-.header h1 {position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            margin: 0;
-            color: white;
-            padding: 12px 18px;
-            background: rgba(0,0,0,0.55);
-            border-radius: 8px;
-            text-align: center;}
-  .no-stretch {max-width: 50vh; 
-    display: block; 
-    margin: auto; 
-    height: auto; 
-    max-height: 50vh;}
+.header h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: white;
+  padding: 12px 18px;
+  background: rgba(0,0,0,0.55);
+  border-radius: 8px;
+  text-align: center;
+}
 
-.content {max-width: 800px;
-margin: 40px auto; 
-background: white;
-padding: 24px;
-border-radius: 10px;}
+/* CONTENT */
+.content {
+  max-width: 800px;
+  margin: 40px auto;
+  background: white;
+  padding: 24px;
+  border-radius: 10px;
+}
 
-.Puhelin {font-weight: bold}
+.Puhelin {
+  font-weight: bold;
+  margin-top: 24px;
+}
 
-.footer {text-align: center;
-         padding: 20px;
-         color: #555;}
-.map {margin-top: 40px;
-display: flex;
-justify-content: center;
-}/* FOOTER */
+/* MAP */
+.map {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.map iframe {
+  width: min(800px, 100%);
+  height: 450px;
+  border: 0;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #555;
+}
+
 /* Leveä näyttö → palvelut vierekkäin */
 @media (min-width: 900px) {
   .service {
