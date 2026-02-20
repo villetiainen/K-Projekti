@@ -1,8 +1,15 @@
+/* BODY / TYPOGRAFIA */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 17px; /* hieman isompi teksti */
+  line-height: 1.7; /* parempi luettavuus */
   background: #eee;
+}
+
+/* OTSIKOT */
+h1, h2, h3 {
+  font-weight: 500;
 }
 
 /* NAVI */
@@ -25,17 +32,30 @@ body {
   display: block;
 }
 
-.nav a:hover { background-color: #111; }
-.nav a.active { background-color: #026b43; }
+.nav a:hover {
+  background-color: #111;
+}
 
-.logo a { font-size: 20px; font-weight: bold; }
+.nav a.active {
+  background-color: #026b43;
+}
+
+.logo a {
+  font-size: 20px;
+  font-weight: bold;
+}
 
 @media (max-width: 600px) {
-  .nav a { padding: 10px 12px; font-size: 14px; }
+  .nav a {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
 }
 
 /* HERO / HEADER */
-.header { position: relative; }
+.header {
+  position: relative;
+}
 
 .header img {
   width: 100%;
@@ -101,3 +121,5 @@ body {
     gap: 40px;
   }
 }
+}
+
