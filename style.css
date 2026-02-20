@@ -130,6 +130,28 @@ h1, h2, h3 {
     padding-bottom: 8px;
   }
 }
+/* SOITA-NAPPI (mobiili) */
+.callbar {
+  max-width: 800px;
+  margin: 16px auto 0;
+  padding: 0 12px;
+}
+
+.callbtn {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background: #026b43;
+  color: white;
+  font-weight: 700;
+  padding: 14px 16px;
+  border-radius: 12px;
+}
+
+/* Näytä nappi vain puhelimella */
+@media (min-width: 601px) {
+  .callbar { display: none; }
+}
 
 
 
