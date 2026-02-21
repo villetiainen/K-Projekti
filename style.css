@@ -179,6 +179,47 @@ h1, h2, h3 {
     padding: 14px 22px;
   }
 }
+/* ISO NÄYTTÖ (esim. 1920px+) → kaikki vähän isommaksi */
+@media (min-width: 1600px) {
+
+  /* Perusteksti */
+  body {
+    font-size: 19px;
+  }
+
+  /* Otsikot */
+  h1 { font-size: 42px; }
+  h2 { font-size: 32px; }
+  h3 { font-size: 24px; }
+
+  /* Navigaatio */
+  .nav a {
+    font-size: 20px;
+    padding: 18px 26px;
+  }
+
+  .logo a {
+    font-size: 26px;
+  }
+
+  /* Hero otsikko */
+  .header h1 {
+    font-size: 42px;
+    padding: 18px 26px;
+  }
+
+  /* Content padding isommaksi */
+  .content {
+    padding: 36px;
+  }
+
+  /* Painike */
+  .callbtn {
+    font-size: 20px;
+    padding: 18px 20px;
+  }
+}
+
 
 
 
